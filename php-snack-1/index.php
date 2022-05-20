@@ -21,19 +21,8 @@ $partite = [
     'punti squadra ospite' => '50'
    ],
 
-]
-?>
+];
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snack 1</title>
-</head>
-<body>
-<div><?php echo $partite[0]['squadra casa'] ?></div>
-    
-</body>
-</html>
+for ($i = 0; $i < count($partite); $i++) {
+    echo $partite[$i]['squadra casa'] . " - " . $partite[$i]['squadra ospite'] . " | " . $partite[$i]['punti squadra casa'] . " - " . $partite[$i]['punti squadra ospite'];
+};
