@@ -32,6 +32,10 @@ distinctio est eveniet cumque beatae ipsa ipsum inventore ad vel a ducimus, impe
 hic reprehenderit fugiat similique iste ex illum. Incidunt porro eveniet maxime, consequuntur, veniam quas animi, modi aspernatur
 ea corrupti qui. Ut accusantium aspernatur sunt dolores. Voluptate aliquid quia omnis, dolore exercitationem laborum soluta delectus 
 animi culpa eligendi totam.';
+
+$contentArray = explode('.', $text);
+
+var_dump($contentArray);
 ?>
 
 <!DOCTYPE html>
@@ -46,8 +50,8 @@ animi culpa eligendi totam.';
 
 <body>
 
-    <?php foreach (explode('.', $text) as $paragraph) : ?>
-        <p><?php echo $paragraph; ?></p>
+    <?php foreach ($contentArray as $paragraph) : ?>
+        <p><?php echo $paragraph; ?>.</p>
     <?php endforeach; ?>
 
 </body>
