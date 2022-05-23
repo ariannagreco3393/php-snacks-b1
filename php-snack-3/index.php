@@ -73,5 +73,6 @@ $posts = [
 </ul>
 
 <?php } ?>
+
 </body>
 </html>
